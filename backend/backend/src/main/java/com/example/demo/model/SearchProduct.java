@@ -61,7 +61,7 @@ public class SearchProduct {
     public void setPriceMaximum(double priceMaximum) {
         this.priceMaximum = priceMaximum;
     }
-
+//TODO sort
     @Override
     public String toString() {
         return "SearchProduct{" +
