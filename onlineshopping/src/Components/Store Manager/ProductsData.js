@@ -19,7 +19,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import ComplexNavigationNoDrawer from "../Common/ComplexNavigationNoDrawer/ComplexNavigationNoDrawer";
 import axios from "axios";
 import ProductsTableStoreManager from "../Admin Panel/Tables/ProductTableStoreManager";
-import Notices from "../Notification/Notices";
+import Notices from "../TestDir/Notices";
 
 function AddProductDialog(props) {
     const [open, setOpen] = React.useState(false);

@@ -55,6 +55,7 @@ class Signup extends Component {
 
                 } else {
 
+                    /////////////need to implement after backend is done //////////////axios/////////
 
                     this.setState({
                         errors: {
@@ -97,6 +98,7 @@ class Signup extends Component {
                         errormsg: "Invalid email type please add valid email address"
                     })
                 } else {
+                    ////////need to implement after backend is completed
 
                     this.setState({
                         errors: {
