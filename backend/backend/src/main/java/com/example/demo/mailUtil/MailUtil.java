@@ -49,7 +49,7 @@ public class MailUtil {
 			message.setRecipient(Message.RecipientType.TO, new InternetAddress(recepient));
 			message.setSubject("Login Credentials For V.A.M.P Store ");
 			message.setText(
-					"You are now registered as a store manager for BLACK AND BLUE online fashion store.\n\n"
+					"You are now registered as a store manager for V.A.M.P store.\n\n"
 					+"Username: "+username
 					+"\n"+
 					"Password: "+password);
