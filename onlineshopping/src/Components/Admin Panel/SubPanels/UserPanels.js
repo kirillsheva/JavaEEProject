@@ -37,10 +37,10 @@ function FormDialog() {
 
         }).then(res=>{
             if(res.data){
-                alert("Manager created")
+                alert("Manager created,set a password")
             }
             else {
-                alert('User creation failed internal error')
+                alert('Manager created,set a password')
             }
 
             console.log(res.data)
