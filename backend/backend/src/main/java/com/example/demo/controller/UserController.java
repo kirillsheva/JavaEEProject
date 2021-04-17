@@ -14,20 +14,22 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.model.Order;
 import com.example.demo.model.Product;
 import com.example.demo.model.User;
-import com.example.demo.requestBodies.AddUserRequest;
+import com.example.demo.requesBodies.AddUserRequest;
 
-import com.example.demo.requestBodies.ChangePasswordRequest;
+import com.example.demo.requesBodies.ChangePasswordRequest;
+import com.example.demo.requesBodies.Comment;
 
-import com.example.demo.requestBodies.GetUser;
-import com.example.demo.requestBodies.OrderReq;
-import com.example.demo.requestBodies.ProductUser;
-import com.example.demo.requestBodies.RemoveOrder;
-import com.example.demo.requestBodies.UserLoginRequest;
-import com.example.demo.requestBodies.UserUpdateRequest;
+import com.example.demo.requesBodies.GetUser;
+import com.example.demo.requesBodies.OrderReq;
+import com.example.demo.requesBodies.ProductUser;
+import com.example.demo.requesBodies.RemoveOrder;
+import com.example.demo.requesBodies.UserLoginRequest;
+import com.example.demo.requesBodies.UserUpdateRequest;
 import com.example.demo.service.UserService;
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://localhost:3000")
+
 public class UserController {
 	
 	@Autowired

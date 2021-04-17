@@ -1,10 +1,14 @@
-
+//IT18125412 T. M. D. D. Thalakumbura
+// This is for the search feature
+// Will be mainly available in the home
+// Expected to be capable of searching through database
 package com.example.demo.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
+//@Document(collection = "product")
 public class SearchProduct {
 
     @Id
@@ -13,6 +17,8 @@ public class SearchProduct {
     private String type;
     private double priceMinimum;
     private double priceMaximum;
+    // maybe will add gender but for now will not since I'm not sure if i can create the business logic of it within the time period
+
 
     public SearchProduct(int id, int name, String type, double priceMinimum, double priceMaximum) {
         Id = id;
@@ -61,7 +67,7 @@ public class SearchProduct {
     public void setPriceMaximum(double priceMaximum) {
         this.priceMaximum = priceMaximum;
     }
-//TODO sort
+
     @Override
     public String toString() {
         return "SearchProduct{" +

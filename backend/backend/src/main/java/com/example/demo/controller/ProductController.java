@@ -2,18 +2,23 @@ package com.example.demo.controller;
 
 import com.example.demo.model.Product;
 
-import com.example.demo.requestBodies.Comment;
-import com.example.demo.requestBodies.CommentReq;
-import com.example.demo.requestBodies.OwnerReq;
-import com.example.demo.requestBodies.ProductRequest;
-import com.example.demo.requestBodies.ProductUpdateRequest;
-import com.example.demo.requestBodies.RatingReq;
-import com.example.demo.requestBodies.SerachBody;
-import com.example.demo.requestBodies.categoryreq;
-import com.example.demo.requestBodies.discountReq;
-import com.example.demo.requestBodies.productid;
+import com.example.demo.requesBodies.Comment;
+import com.example.demo.requesBodies.CommentReq;
+import com.example.demo.requesBodies.GetUser;
+import com.example.demo.requesBodies.OwnerReq;
+import com.example.demo.requesBodies.ProductRequest;
+import com.example.demo.requesBodies.ProductUpdateRequest;
+import com.example.demo.requesBodies.ProductUser;
+import com.example.demo.requesBodies.RatingReq;
+import com.example.demo.requesBodies.SerachBody;
+import com.example.demo.requesBodies.categoryreq;
+import com.example.demo.requesBodies.discountReq;
+import com.example.demo.requesBodies.productid;
 import com.example.demo.service.ProductServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -21,7 +26,7 @@ import java.io.IOException;
 import java.util.List;
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://localhost:3000")
 public class ProductController {
 	
 	@Autowired

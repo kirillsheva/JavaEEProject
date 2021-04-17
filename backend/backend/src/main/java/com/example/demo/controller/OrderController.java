@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.model.Product;
-import com.example.demo.requestBodies.GetUser;
+import com.example.demo.requesBodies.GetUser;
 import com.example.demo.service.OrderService;
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://localhost:3000")
 public class OrderController {
 
 	

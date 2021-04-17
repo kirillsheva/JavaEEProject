@@ -14,6 +14,8 @@ import com.example.demo.model.Product;
 import com.example.demo.model.User;
 import com.example.demo.repo.ProductRepo;
 import com.example.demo.repo.UserRepo;
+import com.example.demo.requesBodies.Comment;
+import com.example.demo.requesBodies.GetUser;
 
 @Service
 public class UserService {
