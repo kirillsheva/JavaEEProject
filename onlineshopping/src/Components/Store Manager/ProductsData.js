@@ -228,11 +228,9 @@ function NotificationDialog() {
 
     return (
         <div>
-            <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-                ADD NOTIFICATION
-            </Button>
+
             <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-                <DialogTitle id="form-dialog-title">ADD NOTIFICATION</DialogTitle>
+
                 <form onSubmit={broadcastNotification}>
                 <DialogContent>
                     <DialogContentText>This notification will be broadcasted</DialogContentText>

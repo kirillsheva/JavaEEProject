@@ -113,7 +113,7 @@ export  default class CartPost extends Component{
                     <TableCell className={"cell"} align={"center"}></TableCell>
                     <TableCell className={"cell"} align={"center"}></TableCell>
                     <TableCell className={"cell"} align={"center"}><h5>Total:</h5></TableCell>
-                    <TableCell className={"cell"} align={"center"}><h5>Rs.{this.Total}</h5></TableCell>
+                    <TableCell className={"cell"} align={"center"}><h5>{this.Total}</h5></TableCell>
                     <TableCell align={"center"}>
                         <Button variant={"contained"}
                                 color={"primary"}

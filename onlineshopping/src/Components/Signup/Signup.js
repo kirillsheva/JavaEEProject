@@ -195,7 +195,7 @@ class Signup extends Component {
                 <div className="container-lg">
 
                     <div className={"title"}><h1>Signup Now</h1></div>
-                    <div>“Fashion & Clothing is the one makes you look awesome and unique from others!”</div>
+                    <div>Devices that create your own style!</div>
 
                     <div className={"form-container"} style={{marginTop:"10px"}}>
                         {
