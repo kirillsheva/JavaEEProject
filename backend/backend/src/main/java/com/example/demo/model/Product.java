@@ -1,14 +1,12 @@
-//IT18125412 T. M. D. D. Thalakumbura
 package com.example.demo.model;
 import java.util.ArrayList;
 
-import java.util.Hashtable;
+
 import java.util.List;
 
 import org.bson.types.Binary;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.requesBodies.Comment;
 
