@@ -1,18 +1,16 @@
-//IT18125412 T. M. D. D. Thalakumbura
-
 package com.example.demo.service;
 
 import com.example.demo.model.Product;
-import com.example.demo.model.User;
+
 import com.example.demo.repo.ProductRepo;
 import com.example.demo.repo.UserRepo;
 import com.example.demo.requesBodies.Comment;
 import com.example.demo.requesBodies.CommentReq;
-import com.example.demo.requesBodies.GetUser;
+
 import com.example.demo.requesBodies.OwnerReq;
 import com.example.demo.requesBodies.ProductRequest;
 import com.example.demo.requesBodies.ProductUpdateRequest;
-import com.example.demo.requesBodies.ProductUser;
+
 import com.example.demo.requesBodies.RatingReq;
 import com.example.demo.requesBodies.categoryreq;
 import com.example.demo.requesBodies.discountReq;
