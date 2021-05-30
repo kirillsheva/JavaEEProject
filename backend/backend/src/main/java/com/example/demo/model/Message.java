@@ -4,34 +4,39 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 public class Message {
-	
-	private String from;
-	private String msg;
-	
-	
-	
-	
-	
-	
-	
-	public Message(String from, String msg) {
-		super();
-		this.from = from;
-		this.msg = msg;
+
+	private MessageType type;
+	private String content;
+	private String sender;
+
+	public enum MessageType {
+		CHAT, JOIN, LEAVE
 	}
-	public String getFrom() {
-		return from;
+
+	public MessageType getType() {
+		return type;
 	}
-	public void setFrom(String from) {
-		this.from = from;
+
+	public void setType(MessageType type) {
+		this.type = type;
 	}
-	public String getMsg() {
-		return msg;
+
+	public String getContent() {
+		return content;
 	}
-	public void setMsg(String msg) {
-		this.msg = msg;
+
+	public void setContent(String content) {
+		this.content = content;
 	}
-	
-	
+
+	public String getSender() {
+		return sender;
+	}
+
+	public void setSender(String sender) {
+		this.sender = sender;
+	}
+
+
 
 }
