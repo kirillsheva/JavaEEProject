@@ -13,6 +13,12 @@ public class Message {
 		CHAT, JOIN, LEAVE
 	}
 
+	public Message(String from, String msg) {
+		super();
+		this.from = from;
+		this.msg = msg;
+	}
+	
 	public MessageType getType() {
 		return type;
 	}
