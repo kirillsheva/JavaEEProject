@@ -22,7 +22,25 @@ public class ChatController {
 	@Autowired private ChatMessageService chatMessageService;
 	@Autowired private ChatRoomService chatRoomService;
 
-
+	@Autowired
+	ChatService service;
+	
+	
+	@RequestMapping("/allmessages")
+     public AllChats getAllChats() {
+    	 
+    	 return service.GetAllMessages();
+     }
+	
+	
+	@RequestMapping("/sendmessage")
+	public Message sendMessage(@RequestBody ChatRequst request) {
+		
+		return service.addMessage(request.from, request.msg);
+	}
+	
+	
+	
 	@MessageMapping("/allMessages")
 	public void processMessage(@Payload ChatMessage chatMessage) {
 		var chatId = chatRoomService
