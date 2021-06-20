@@ -18,9 +18,7 @@ import com.example.demo.service.ChatService;
 public class ChatController {
 
 
-	@Autowired private SimpMessagingTemplate messagingTemplate;
-	@Autowired private ChatMessageService chatMessageService;
-	@Autowired private ChatRoomService chatRoomService;
+	
 
 	@Autowired
 	ChatService service;
